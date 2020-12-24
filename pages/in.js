@@ -80,28 +80,28 @@ const POHead=()=>{
 
 const PODetails=()=>{
     return(
-        <Box>
+        <Box style={{marginTop:20}}>
         <Grid container spacing={6}>
-            <Grid  item xs={1.3}>Sl. no</Grid>
-            <Grid  item xs={1.3}>Barcode</Grid>
-            <Grid  item xs={1.3}>Product Code</Grid>
-            <Grid  item xs={1.3}>Product Description</Grid>
-            <Grid  item xs={1.3}>Unit</Grid>
-            <Grid  item xs={1.3}>Qty</Grid>
-            <Grid  item xs={1.3}>Location</Grid>
-            <Grid  item xs={1.3}>Fr</Grid>
-            <Grid  item xs={1.3}>Quantity</Grid>
+            <Grid  item xs>Sl. no</Grid>
+            <Grid  item xs>Barcode</Grid>
+            <Grid  item xs>Product Code</Grid>
+            <Grid  item xs>Product Description</Grid>
+            <Grid  item xs>Unit</Grid>
+            <Grid  item xs>Qty</Grid>
+            <Grid  item xs>Location</Grid>
+            <Grid  item xs>Fr</Grid>
+            <Grid  item xs>Quantity</Grid>
         </Grid>
         <Grid container spacing={6}>
-            <Grid  item xs={1.3}>Sl. no</Grid>
-            <Grid  item xs={1.3}>Barcode</Grid>
-            <Grid  item xs={1.3}>Product Code</Grid>
-            <Grid  item xs={1.3}>Product Description</Grid>
-            <Grid  item xs={1.3}>Unit</Grid>
-            <Grid  item xs={1.3}>Qty</Grid>
-            <Grid  item xs={1.3}>Location</Grid>
-            <Grid  item xs={1.3}>Fr</Grid>
-            <Grid  item xs={1.3}>Quantity</Grid>
+            <Grid  item xs>Sl. no</Grid>
+            <Grid  item xs>Barcode</Grid>
+            <Grid  item xs>Product Code</Grid>
+            <Grid  item xs>Product Description</Grid>
+            <Grid  item xs>Unit</Grid>
+            <Grid  item xs>Qty</Grid>
+            <Grid  item xs>Location</Grid>
+            <Grid  item xs>Fr</Grid>
+            <Grid  item xs>Quantity</Grid>
         </Grid>
         </Box>
         
