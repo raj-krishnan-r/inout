@@ -15,27 +15,30 @@ const In=()=>{
             </Typography>
             </Grid>
             <Grid item xs={12}>
+                <Grid justify="flex-end" container style={{padding:3}}>
             <ButtonGroup>
-                <Button><AddIcon/></Button>
-                <Button><EditIcon/></Button>
-                <Button><SearchIcon/></Button>
+                <Button variant="contained"><AddIcon/></Button>
+                <Button variant="contained"><EditIcon/></Button>
+                <Button variant="contained"><SearchIcon/></Button>
             </ButtonGroup>
+            </Grid>
             </Grid>
             <Grid item xs={12}>
                 <Paper>
-        <Grid item xs={8}><Card><POHead/></Card></Grid>
+        <Grid item xs={6}><Card><POHead/></Card></Grid>
         <Grid item xs={12}>
+            <Grid container justify="flex-end" style={{padding:3}}>
             <ButtonGroup>
-                <Button><AddIcon/></Button>
+                <Button variant="contained"><AddIcon/></Button>
             </ButtonGroup>
+            </Grid>
         </Grid>
         <Grid item xs={12}>
+            <Card>
             <PODetails/>
             <PODetails/>
             <PODetails/>
-            <PODetails/>
-            <PODetails/>
-
+</Card>
         </Grid>
     </Paper>
     </Grid>
