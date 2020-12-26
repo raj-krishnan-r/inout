@@ -3,10 +3,10 @@ import MenuIcon from '@material-ui/icons/Menu';
 import AddIcon from '@material-ui/icons/Add';
 import EditIcon from '@material-ui/icons/Edit';
 import SearchIcon from '@material-ui/icons/Search';
-import { Search } from "@material-ui/icons";
+import DeleteIcon from '@material-ui/icons/Delete';
 const In=()=>{
     return(
-<Container>
+<Box>
     <Appbar/>
     <Grid container spacing={2}>
         <Grid item xs={12}>
@@ -25,12 +25,22 @@ const In=()=>{
                 <Paper>
         <Grid item xs={8}><Card><POHead/></Card></Grid>
         <Grid item xs={12}>
+            <ButtonGroup>
+                <Button><AddIcon/></Button>
+            </ButtonGroup>
+        </Grid>
+        <Grid item xs={12}>
             <PODetails/>
+            <PODetails/>
+            <PODetails/>
+            <PODetails/>
+            <PODetails/>
+
         </Grid>
     </Paper>
     </Grid>
     </Grid>
-</Container>
+</Box>
     );
 }
 export default In;
@@ -54,54 +64,30 @@ const Appbar = ()=>{
 
 const POHead=()=>{
     return(
-        <Grid container>
+        <Grid container style={{margin:20,padding:10}}>
             <Grid item xs={3}>
-            Doc Number
-            </Grid>
-            <Grid item xs={3}>Supplier</Grid>
-            <Grid item xs={3}>PO Number
-            </Grid>
-            <Grid item xs={3}>Date</Grid>
-            <Grid item xs={3}>
-            <Typography variant="h6">#123</Typography>
-            </Grid>
-            <Grid item xs={3}>
-<TextField></TextField>
-            </Grid>
-            <Grid item xs={3}>
-            <TextField></TextField>
-            </Grid>
-            <Grid item xs={3}>
-<Typography variant="h6">3rd September 1993</Typography>
-            </Grid>
+            <TextField label="Doc Number"></TextField></Grid>
+            <Grid item xs={3}><TextField label="Supplier"></TextField></Grid>
+            <Grid item xs={3}><TextField label="PO Number"></TextField>
+            </Grid><Grid item xs={3}><TextField label="Date"></TextField></Grid>        
         </Grid>
     );
 }
 
 const PODetails=()=>{
     return(
-        <Box style={{marginTop:20}}>
-        <Grid container spacing={6}>
-            <Grid  item xs>Sl. no</Grid>
-            <Grid  item xs>Barcode</Grid>
-            <Grid  item xs>Product Code</Grid>
-            <Grid  item xs>Product Description</Grid>
-            <Grid  item xs>Unit</Grid>
-            <Grid  item xs>Qty</Grid>
-            <Grid  item xs>Location</Grid>
-            <Grid  item xs>Fr</Grid>
-            <Grid  item xs>Quantity</Grid>
-        </Grid>
-        <Grid container spacing={6}>
-            <Grid  item xs>Sl. no</Grid>
-            <Grid  item xs>Barcode</Grid>
-            <Grid  item xs>Product Code</Grid>
-            <Grid  item xs>Product Description</Grid>
-            <Grid  item xs>Unit</Grid>
-            <Grid  item xs>Qty</Grid>
-            <Grid  item xs>Location</Grid>
-            <Grid  item xs>Fr</Grid>
-            <Grid  item xs>Quantity</Grid>
+        <Box style={{marginTop:2}}>
+        <Grid container spacing={6} style={{margin:3}}>
+            <Grid  item xs><TextField label="Sl. No"></TextField></Grid>
+            <Grid  item xs><TextField label="Barcode"></TextField></Grid>
+            <Grid  item xs><TextField label="Code"></TextField></Grid>
+            <Grid  item xs><TextField label="Description"></TextField></Grid>
+            <Grid  item xs><TextField label="Unit"></TextField></Grid>
+            <Grid  item xs><TextField label="Qty"></TextField></Grid>
+            <Grid  item xs><TextField label="Location"></TextField></Grid>
+            <Grid  item xs><TextField label="Fr"></TextField></Grid>
+            <Grid  item xs><TextField label="Quantity"></TextField></Grid>
+            <Grid  item xs><Button><DeleteIcon/></Button></Grid>
         </Grid>
         </Box>
         

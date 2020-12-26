@@ -7,7 +7,6 @@ return(
 <Grid item xs={6} alignItems>
 <Grid item xs={12}>
 <Typography>Log In</Typography></Grid>
-<Grid container>
  <FormControl>
      <TextField required id="username" label="Username"/>
 
@@ -16,7 +15,7 @@ return(
          <Button style={{margin:'dense'}} variant="contained" color="primary">Login</Button>
          </Grid>
  </FormControl>
-</Grid></Grid></Grid>
+</Grid></Grid>
 );
 }
 export default Index;
